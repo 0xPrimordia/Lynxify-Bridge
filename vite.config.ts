@@ -15,5 +15,8 @@ export default defineConfig({
         stream: "stream-browserify",
         zlib: "browserify-zlib",    
         util: "util/"    }
-},
+  },
+  build: {
+    commonjsOptions: { transformMixedEsModules: true } // Change
+  }
 })
